@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "TestViewBag";
+
+    object objViewBag = (object)ViewBag.Name;
+    object objViewData = (object)ViewData["Name"];
+    bool result = Object.ReferenceEquals(objViewBag, objViewData);
+}
+
+<h2>Compare ViewBag & ViewData</h2>
+<h1>ViewBag與ViewData是否參考同一個物件 : @result</h1>
+
+<ul>
+    <li>@ViewBag.Person</li>
+    <li>
+        @Html.Raw(ViewBag.Person)
+    </li>
+    <li>
+        @ViewBag.Man.Data
+    </li>
+</ul>

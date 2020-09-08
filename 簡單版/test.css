@@ -1,0 +1,229 @@
+.header{
+    display: flex;
+    padding: 6px 10px;                            /*第一個參數為上下，第二個為左右*/
+    background-color: black;
+}
+
+.header .logo{
+    display: inline-block;
+    padding: 6px 0px;
+}
+
+.header nav {
+    text-align: right;
+    width: 100%;
+    font-size: 0px;
+}
+
+.header nav a{
+    display: inline-block;
+    line-height: 52px;                            /*行高*/
+    font-size: 16px;
+    color:#fff;
+    text-decoration: none;                       /*取消底線*/
+    padding: 0px 10px;
+
+}
+
+.header nav a:hover{                            /*超連結被摸到會有反應*/
+    background-color: coral;
+
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.banner img{
+    width: 100%;                               /*不寫死圖片*/
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.path{
+    display: flex;
+    list-style-type: none ;
+
+}
+
+.path li{
+    position: relative;
+    padding: 6px 8px;
+}
+
+.path li a{
+    color:#aaa;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.path li + li ::before {                       /*使用css選擇器*/
+    content:'/';
+    color:#aaa;
+    position: absolute;
+    left: 0;
+
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.about{
+    padding: 40px 0px;
+}
+
+.about > h2{                                 /*大於符號表示只對about下的第一層h2有效果*/
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    padding: 20px 0px;
+    text-align: center;
+
+
+}
+
+.about > p{                                 /*大於符號表示只對about下的第一層p有效果*/
+
+    width: 600px;
+    margin: auto;
+    padding: 0px 0px 50px;          /*上、左、下*/
+    text-align: center;
+
+}
+
+.item h3{
+
+    font-size: 35px;
+    padding: 0px 0px 15px;
+}
+
+.wrap{
+    width: 960px;
+    margin: auto;
+}
+
+.about .wrap{
+    display: flex;
+   
+}
+
+.wrap .item{
+
+    width: 400px;
+    margin: 10px 5px;
+    text-align: center;
+
+}
+
+.about .item img{
+
+    border-radius: 50%;
+
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.products{
+
+    background-color: #aaa;
+
+}
+
+.products .wrap{
+
+    display: flex;
+}
+
+.products.item{
+
+    width: 50%;
+}
+
+.products.item img{
+
+    padding-bottom:0 px ;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.products pic{}
+
+.products text{
+    padding: 0px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.service{
+
+    padding: 40px 0px;
+
+}
+
+.service > h2{                                            /*告訴css只做到service底下第一層h2就好*/
+
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    font-size: 46px;
+    padding: 20px 0px;
+}
+
+.service > p{                                             /*告訴css只做到service底下第一層p就好*/
+    
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    padding-bottom:40px;
+     
+}
+
+.service .wrap{
+
+    display:flex;
+
+}
+
+.service .item{
+
+    margin: 0px 10px;
+    width: 300px;
+    text-align: center;
+
+}
+
+.service .item h3{}
+
+.service .item p{}
+
+.service .item img{
+
+    width: 100%;
+
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.footer{
+
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+/* 如果套用  
+
+.wrap .item img{
+
+    border-radius: 50%;
+}
+
+相關屬性都會被調整到，如果只想要調整，about內的img
+改用以下的方式
+
+.about .item img{
+
+    border-radius: 50%;
+
+}
+
+
+
+*/

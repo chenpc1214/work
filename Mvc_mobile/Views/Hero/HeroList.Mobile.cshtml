@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "jQuery Mobile)";   //設定HTML的Title
+    ViewBag.Header = "LOL英雄人物(jQuery Mobile行動版)"; //設定jQuer Mobile的header
+    ViewBag.Footer = "《ASP.NET MVC 5.x範例完美演繹 -- 聖殿祭司》"; //設定jQuer Mobile的footer
+}
+
+<!--Tabs Widget-->
+<div data-role="tabs">
+    <!--Tabs Navbar-->
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#tabs_annie" class="ui-btn-active">Annie</a></li>
+            <li><a href="#tabs_braum">Braum</a></li>
+            <li><a href="#tabs_caitlyn">Caitlyn</a></li>
+            <li><a href="#tabs_fizz">Fizz</a></li>
+            <li><a href="#tabs_nunu">Nunu</a></li>
+        </ul>
+    </div>
+    <div id="tabs_annie" class="ui-content">
+        <h1>黑暗之女 安妮 </h1>
+        <p>安妮的血統和出生地的黑暗魔法，讓她擁有驚人的秘術能量。</p>
+        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_3.jpg" />
+    </div>
+    <div id="tabs_braum" class="ui-content">
+        <h1>弗雷爾卓德豪腕 布郎姆</h1>
+        <p>布郎姆是有史以來最強壯的男人，擁有神奇的魔法重盾。</p>
+        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_1.jpg" />
+    </div>
+    <div id="tabs_caitlyn" class="ui-content">
+        <h1>執法者 凱特琳</h1>
+        <p>凱特琳從不向犯罪低頭，是城邦中最厲害的神槍手。</p>
+        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_2.jpg" />
+    </div>
+    <div id="tabs_fizz" class="ui-content">
+        <h1>深海頑童 飛斯</h1>
+        <p>飛斯在戰鬥時，讓比爾吉沃特最善戰的水手看起來像個喝醉的旱鴨子。</p>
+        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg" />
+    </div>
+    <div id="tabs_nunu" class="ui-content">
+        <h1>雪人騎士 努努 </h1>
+        <p>努努和威朗普的雙人組合有著年輕人的衝勁和野獸的蠻力，兩者互相補足對方的劣勢，更可以說是跨越了不少常人難以跨越的障礙和阻撓。</p>
+        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg" />
+    </div>
+</div>
+
+@section topCSS{
+    <style>
+        h1.ui-title {
+            margin-left: 10% !important;
+            margin-right: 10% !important;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        div > a.ui-btn {
+            background-color: mediumpurple !important;
+            text-shadow: none !important;
+            color: white !important;
+            border-radius: 5px;
+        }
+    </style>
+}

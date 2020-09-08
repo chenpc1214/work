@@ -1,0 +1,3 @@
+必須先安裝Chart.js
+
+步驟：  工具 >> NuGet 套件管理員 >> 套件管理器主控台 >> 輸入 Install-Package Chart.js

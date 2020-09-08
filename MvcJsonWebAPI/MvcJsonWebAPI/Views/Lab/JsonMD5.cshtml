@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "JsonMD5";
+}
+
+<h2>JsonMD5</h2>
+
+C# MD5 : @ViewBag.Md5String
+
+<br />
+JavaScript MD5 : <span id="result"></span>
+@section endJS{
+<script src="~/Assets/js/md5.js"></script>
+
+<script>
+    var message = "This is a string MD5 demo.";
+
+    var md5value = md5(message);
+
+    document.getElementById("result").innerHTML = md5value;
+</script>
+
+}

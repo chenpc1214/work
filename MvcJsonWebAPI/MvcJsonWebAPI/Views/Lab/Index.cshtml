@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<p id="p1" class="alert alert-success"></p>
+<p id="p2" class="alert alert-info"></p>
+<p id="p3" class="alert alert-danger"></p>
+<p id="p4" class="alert alert-warning"></p>
+
+@section endJS{
+    <script>
+        var jsMonths = @Html.Raw(ViewBag.JsonMonths);
+        var jsEmployees = @Html.Raw(ViewBag.JsonEmployees);
+
+        document.getElementById("p1").innerHTML = jsMonths[0];
+        document.getElementById("p2").innerHTML = jsEmployees[0].Id + ", " + jsEmployees[0].Name + ", " + jsEmployees[0].Department;
+
+        document.getElementById("p3").innerHTML = JSON.stringify(jsMonths);
+        document.getElementById("p4").innerHTML = JSON.stringify(jsEmployees);
+    </script>
+}

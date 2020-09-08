@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    font-family: fantasy;
+}
+
+.banner{
+
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    background:
+    linear-gradient(115deg,#7bf 50%,
+    transparent 50%) center center/100% 100%,
+    url(https://picsum.photos/seed/picsum/200/300) right center /auto 100%;
+
+    
+
+}
+
+
+.container{
+
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+
+}  
+
+.banner-txt{
+
+    display: flex;
+
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    
+
+}
+
+.banner-txt h1{
+
+    font-size: 80px;
+    font-weight: 900;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.3em;
+    font-size: 53px;
+}
+
+.banner-txt h1 small{
+
+    display: block;
+    font-size: 53px;
+    font-weight: 700;
+}
+.banner-txt h2{
+
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px ;
+
+}
+.banner-txt p{
+
+    font-size: 20px;
+    font-weight: 100;
+    display: block;
+    
+
+}
+
+/*假RWD將 container WIDTH 的部分改成100% 、加入max-width:1440px*/
+

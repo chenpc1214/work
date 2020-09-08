@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>數位時鐘</title>
+        <script>
+            function displaytime()
+            {var elt = document.getElementById("clock");
+             var now = new Date();
+             elt.innerHTML = now.toLocaleDateString();
+             setTimeout(displaytime,1000);
+            }
+            window.onload = displaytime;
+        </script>
+        <style>
+            #clock
+            {
+                font:bold 24pt sans;
+                background: #ddf;
+                padding: 10px;
+                border:solid rgb(0, 255, 221) 5px;
+                border-radius: 10px;
+            
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            數位時鐘
+        </h1>
+        <span id="clock"></span>
+    </body>
+</html>
