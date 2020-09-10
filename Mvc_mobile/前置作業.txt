@@ -1,4 +1,4 @@
-方法1 >> 工具>> NuGet套建管理員>>管理方的套件工具>>瀏覽>>搜尋欄位Jquery.Mobile
+(首選)方法1 >> 工具>> NuGet套建管理員>>管理方的套件工具>>瀏覽>>搜尋欄位Jquery.Mobile
 
 
 方法二 >> 工具>> NuGet套建管理員>> 套件管理主控台 >>輸入:install-package Jquery.Mobile
