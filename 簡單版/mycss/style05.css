@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:#ae8726 url("../image/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.start-btn{
+    animation-name: start-btn;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes .start-btn{
+    0% {
+        transform:scale(1,1); /*動畫在0%時的尺寸比例*/
+    }
+    100%{
+        transform:scale(1.1,1.1);/*動畫在100%時的尺寸，放大1.1倍*/
+    }
+}
+
+.game-content{
+    margin-top: 15rem;
+}
+
+ul.game-rule{
+	
+	list-style: decimal;/* 項目符號改為數字類型 */
+	
+    padding-left: 1.6rem;/* 左邊內距 */
+}
+
+footer{
+	
+	height: 40px;/* 高度 */
+	
+	line-height: 40px;/* 行高 */
+	
+	background-color: #000;/* 背景顏色 */
+}
