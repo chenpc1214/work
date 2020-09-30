@@ -45,6 +45,14 @@ h2, .title-color{
     height: 300px;
 }
 
+
+
+
+
+.page-content{
+    min-height: 700px;
+}
+
 .footer-menu{
     display: block;
     list-style: none;
@@ -69,4 +77,10 @@ h2, .title-color{
     .send-btn{
         width: 100%;
     }
+}
+
+
+
+.table-middle .table td, .table-middle .table th{
+    vertical-align: middle;
 }
