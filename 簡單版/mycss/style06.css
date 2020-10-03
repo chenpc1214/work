@@ -84,3 +84,56 @@ h2, .title-color{
 .table-middle .table td, .table-middle .table th{
     vertical-align: middle;
 }
+
+.sidebar-product-list{
+    padding-top: 1rem;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.product-list-img{
+    width: 50px;
+    height: 50px;
+    margin: .2rem;
+    opacity: 1;
+    border: 1px solid #0099d1;
+}
+
+.sidebar-product-list:hover .product-list-img{
+    opacity: .5;
+}
+
+.remove{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;    
+}
+
+.remove:hover{
+    background-color: rgb(172, 2, 2);
+}
+
+.sidebar-product-category{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.sidebar-product-category > li{
+    display: block;
+    padding: .5rem 0;
+    border-bottom: 1px solid red;
+}
+
+.sidebar-product-category > li > a{
+    color: rgb(43, 43, 43);
+}
+
+.sidebar-product-category > li >a:hover{
+    color: #999;
+}

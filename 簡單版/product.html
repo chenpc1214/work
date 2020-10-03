@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>商品描述</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./mycss/style06.css">
+</head>
+
+<body>
+
+    <header class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            
+            <a  class="navbar-brand" href="簡易網頁06.html">
+                <img src="http://fakeimg.pl/50x50/" alt="圖片出錯">
+            </a>
+
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="簡易網頁06.html" >首頁</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html" >關於我們</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="shop.html" >商城</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="job.html" >人力資源</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html" >聯絡我們</a>
+                    </li>
+
+                </ul>
+
+                <div class="ml-auto">
+                    <a class="btn btn-outline-success my-2 text-success my-sm-0"  href="login.html">登入</a>
+                    <a class="btn btn-outline-success my-2 text-success my-sm-0"  href="cart.html">購物車</a>
+                    <a class="btn btn-outline-success my-2 text-success my-sm-0"  href="checkout.html">結帳</a>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="page-content">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+
+                <div class="col-12 col-md-9">
+                    <div class="row">
+<!-----------------------------------------------商品圖-------------------------------------------------------->
+                        <div class="col-12 col-md-6">
+                            <img class="im-fluid w-100" src="https://picsum.photos/300/300" alt="erro">
+                        </div>
+
+<!-----------------------------------------------訂購區-------------------------------------------------------->
+
+                        <div class="col-12 col-md-6">
+                            <h4 class="mb-3">商品</h4>
+                            <h5 class="text-danger">
+                                <small class="text-secondary mr-2">
+                                    <del>NT$ &nbsp; 600</del>
+                                </small>
+                                NT$ &nbsp; 500
+                            </h5>
+                            <p class="mt-4">專利樣式，優質材質................</p>
+                            <div class="d-block mb-3">
+                                <p class="mb-0 c">數量</p>
+                                <form class="d-inline-block" action="">
+                                    <input type="number" class=" w-25 form-control" id="quantity" value="1" >
+                                </form>
+                            </div>
+                            <div class="mb-3">
+                                <a href="cart.html" class="btn btn-primary text-white mr-1" >加入購物車</a>
+                                <a href="checkout.html" class="btn btn-secondary text-white" >直接結帳</a>
+                            </div>
+                            <p class="d-block text-secondary">商品分類：<span>類別1/類別2</span></p>
+                        </div>
+
+<!-----------------------------------------------商品描述-------------------------------------------------------->
+
+                        <div class="col-12 mt-5 mb-5">
+                            <ul class="nav nav-tabs" id="ProductTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">描述</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="specification-tab" data-toggle="tab" href="#specification" role="tab" aria-controls="specification" aria-selected="false">產品規格</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="ProductTabContent">
+                                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                    <p class="p-2">專利樣式雙色EVA發泡套管</p>
+                                </div>
+                                <div class="tab-pane fade" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+                                    <p class="p-2">16mm/18mm</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="rpw">
+                        <!-- 搜尋/start -->
+                        <div class="col-12 mb-5">
+                            <form action="">
+                                <input type="test" class="form-control" id="PorductSearch" placeholder="搜尋...">
+                            </form>
+                        </div>
+                        <!-- 搜尋/end -->
+                        <!-- 購物清單/start -->
+                        <div class="col-12 mb-5">
+                            <h4 class="title-color">購物車</h4>
+                            <div class="d-block sidebar-product-list">
+                                <a class="text-white remove" data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
+                                <a href="product.html" class="d-inline-block">
+                                    <img src="https://picsum.photos/300/300" alt="LTG-BY-0001" class="d-inline-block product-list-img">
+                                    <h6 class="d-inline-block">商品1</h6>
+                                </a>
+                                <p class="d-block text-secondary pl-4">
+                                    <span class="text-warning">1</span>&nbsp;X&nbsp;NT$500
+                                </p>
+                            </div>
+                            <div class="d-block sidebar-product-list">
+                                <a class="text-white remove" data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
+                                <a href="product.html" class="d-inline-block">
+                                    <img src="https://picsum.photos/300/300" alt="LTG-BY-0001" class="d-inline-block product-list-img">
+                                    <h6 class="d-inline-block">商品2</h6>
+                                </a>
+                                <p class="d-block text-secondary pl-4">
+                                    <span class="text-warning">1</span>&nbsp;X&nbsp;NT$500
+                                </p>
+                            </div>
+                            <div class="d-block mt-3 mb-3">
+                                <h5 class="text-center">小計：NT$&nbsp;1,000</h5>
+                            </div>
+                            <div class="d-block">
+                                <a href="cart.html" class="btn btn-primary btn-block text-white" role="button">查看購物車</a>
+                            </div>
+                            <div class="d-block mt-1 mb-3">
+                                <a href="checkout.html" class="btn btn-secondary btn-block text-white" role="button">結帳</a>
+                            </div>
+                        </div>
+                        <!-- 購物清單/end -->
+                        <!-- 產品分類/start -->
+                        <div class="col-12 mb-5">
+                            <h4 class="title-color">產品分類</h4>
+                            <ul class="sidebar-product-category">
+                                <li>
+                                    <a href="#">產品分類1</a>
+                                </li>
+                                <li>
+                                    <a href="#">產品分類2</a>
+                                </li>
+                                <li>
+                                    <a href="#">產品分類3</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 產品分類/end -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+
+
+    <footer class="bg-dark">
+        <div class="container pt-3 pb-3">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <ul class="footer-menu">
+                        <li><a class="text-white" href="index.html">首頁</a></li>
+                        <li><a class="text-white" href="about.html">關於</a></li>
+                        <li><a class="text-white" href="shop.html">產品商城</a></li>
+                        <li><a class="text-white" href="job.html">人力資源</a></li>
+                        <li><a class="text-white" href="contact.html">連絡我們</a></li>
+                        <li><a class="text-white" href="login.html">登入</a></li>
+                        <li><a class="text-white" href="cart.html">購物車</a></li>
+                        <li><a class="text-white" href="checkout.html">結帳</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <h6 class="text-white">留下E-mail可搶先獲得最新的資訊喔！</h6>
+                    <form action="">
+                        <input type="email" class="form-control mt-2 mb-2" placeholder="請輸入e-mail">
+                        <button type="submit" class="btn btn-primary float-right send-btn">傳送</button>
+                    </form>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <p class="text-white text-center">© Copyright by me 2020</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip({trigger: "click"});
+        })
+    </script>
+
+</body>
+</html>
